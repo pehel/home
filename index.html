@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top-Floor 2 Bed Apartment for Rent - Allendale, D15</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero Section with Image Gallery -->
+    <section class="hero">
+      <div class="gallery-container">
+        <div class="gallery-main">
+          <img
+            id="mainImage"
+            src="images/image1.jpg"
+            alt="Main property view"
+          />
+          <div class="gallery-nav">
+            <button class="nav-btn prev" onclick="changeImage(-1)">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="nav-btn next" onclick="changeImage(1)">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="image-counter">
+            <span id="currentImage">1</span> / <span id="totalImages">11</span>
+          </div>
+        </div>
+        <div class="gallery-thumbnails">
+          <img
+            class="thumbnail active"
+            src="images/image1.jpg"
+            alt="Apartment view 1"
+            onclick="selectImage(0)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image2.jpg"
+            alt="Apartment view 2"
+            onclick="selectImage(1)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image3.jpg"
+            alt="Apartment view 3"
+            onclick="selectImage(2)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image4.jpg"
+            alt="Apartment view 4"
+            onclick="selectImage(3)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image5.jpg"
+            alt="Apartment view 5"
+            onclick="selectImage(4)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image6.jpg"
+            alt="Apartment view 6"
+            onclick="selectImage(5)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image7.jpg"
+            alt="Apartment view 7"
+            onclick="selectImage(6)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image8.jpg"
+            alt="Apartment view 8"
+            onclick="selectImage(7)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image9.jpg"
+            alt="Apartment view 9"
+            onclick="selectImage(8)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image10.jpg"
+            alt="Apartment view 10"
+            onclick="selectImage(9)"
+          />
+          <img
+            class="thumbnail"
+            src="images/image11.jpg"
+            alt="Apartment view 11"
+            onclick="selectImage(10)"
+          />
+        </div>
+      </div>
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="badge">Available Now</span>
+          <h1>Extra-Spacious Top-Floor Apartment</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Property Overview -->
+      <section class="property-header">
+        <div class="property-title">
+          <h2>2 Bed / 2 Bath Top-Floor Apartment</h2>
+          <p class="address">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Allendale, Dublin 15
+          </p>
+        </div>
+        <div class="price-tag">
+          <span class="price">€2100</span>
+          <span class="period">/month</span>
+        </div>
+      </section>
+
+      <!-- Quick Stats -->
+      <section class="stats">
+        <div class="stat-item">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <div class="stat-info">
+            <h3>2</h3>
+            <p>Bedrooms</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M9 6 9 4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+            <path d="M8 8v13H6a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z"></path>
+            <path d="M16 8v13h2a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2Z"></path>
+          </svg>
+          <div class="stat-info">
+            <h3>2</h3>
+            <p>Bathrooms</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <div class="stat-info">
+            <h3>Top</h3>
+            <p>Floor</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+          <div class="stat-info">
+            <h3>SW</h3>
+            <p>Balcony</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Property Description -->
+      <section class="description-section">
+        <h2 class="section-title">About This Property</h2>
+        <div class="description-content">
+          <p>
+            Step into a beautifully maintained home set within one of the area's
+            most desirable and well-established developments. Tucked away in a
+            peaceful enclave yet surrounded by every convenience, this top-floor
+            apartment offers comfort, space, and excellent natural light
+            throughout.
+          </p>
+          <p>
+            The well-designed floor plan includes an entrance hall, spacious
+            living area, separate kitchen/dining room, two double bedrooms
+            (primary en-suite) and a full family bathroom. Every room has been
+            finished to a high standard, making it an inviting place to call
+            home.
+          </p>
+          <p>
+            The bright southwest-facing private balcony is perfect for enjoying
+            morning coffee or evening relaxation. The primary bedroom features
+            an en-suite bathroom, while both bedrooms include fitted wardrobes
+            for ample storage.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features & Amenities -->
+      <section class="features-section">
+        <h2 class="section-title">Features & Amenities</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <h3>Fully Integrated Appliances</h3>
+            <p>Modern kitchen with all appliances included</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+            <h3>Double-Glazed Windows</h3>
+            <p>Energy efficient and excellent sound insulation</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            </svg>
+            <h3>Feature Fireplace</h3>
+            <p>Beautiful focal point in the living room</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <h3>Fitted Wardrobes</h3>
+            <p>Built-in storage in both bedrooms</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 1v6m0 6v6"></path>
+              <path d="m4.2 4.2 4.2 4.2m7.2 7.2 4.2 4.2"></path>
+              <path d="M1 12h6m6 0h6"></path>
+              <path d="m4.2 19.8 4.2-4.2m7.2-7.2 4.2-4.2"></path>
+            </svg>
+            <h3>Southwest Balcony</h3>
+            <p>Private outdoor space with excellent light</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+              ></path>
+            </svg>
+            <h3>Internal Store Room</h3>
+            <p>Additional storage space included</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+              <path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              ></path>
+            </svg>
+            <h3>Primary En-Suite</h3>
+            <p>Master bedroom with private bathroom</p>
+          </div>
+          <div class="feature-card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+              <line x1="16" y1="8" x2="2" y2="22"></line>
+              <line x1="17.5" y1="15" x2="9" y2="15"></line>
+            </svg>
+            <h3>Quality Finishes</h3>
+            <p>High-standard flooring, tiling throughout</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rental Details -->
+      <section class="rental-details">
+        <h2 class="section-title">Rental Information</h2>
+        <div class="details-grid">
+          <div class="detail-item">
+            <h3>Monthly Rent</h3>
+            <p class="highlight">€2100</p>
+          </div>
+          <div class="detail-item">
+            <h3>Security Deposit</h3>
+            <p>€3000</p>
+          </div>
+          <div class="detail-item">
+            <h3>Lease Term</h3>
+            <p>12 months minimum</p>
+          </div>
+          <div class="detail-item">
+            <h3>Available From</h3>
+            <p>Immediately</p>
+          </div>
+          <div class="detail-item">
+            <h3>Furnishing</h3>
+            <p>Fully furnished</p>
+          </div>
+          <div class="detail-item">
+            <h3>BER Rating</h3>
+            <p>C3</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section class="location-section">
+        <h2 class="section-title">Prime Location - Allendale, D15</h2>
+        <div class="description-content">
+          <p>
+            Allendale is a highly sought-after address, combining privacy with
+            superb connectivity. This peaceful enclave offers residents the
+            perfect balance of tranquility and convenience.
+          </p>
+          <h3 style="margin-top: 25px; margin-bottom: 15px; font-size: 1.3rem">
+            Nearby Amenities:
+          </h3>
+          <div class="location-grid">
+            <div class="location-item">
+              <strong>Shopping & Villages:</strong> Clonsilla, Clonee &
+              Blanchardstown Village, Blanchardstown Shopping Centre, Ongar
+              Village
+            </div>
+            <div class="location-item">
+              <strong>Transport:</strong> Clonsilla Train Station, frequent bus
+              services, M50 and M3 motorway access
+            </div>
+            <div class="location-item">
+              <strong>Healthcare:</strong> Corporate Parks in D15, Connolly
+              Hospital nearby
+            </div>
+            <div class="location-item">
+              <strong>Recreation:</strong> Phoenix Park (approx. 15 mins),
+              Castleknock Village (approx. 15 mins)
+            </div>
+            <div class="location-item">
+              <strong>Airport:</strong> Dublin Airport approximately 20 minutes
+              away
+            </div>
+            <div class="location-item">
+              <strong>Education:</strong> Excellent selection of nearby primary
+              and secondary schools
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section">
+        <div class="contact-card">
+          <h2>Interested? Let's Talk!</h2>
+          <p>Contact us today to schedule a viewing or ask any questions.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <a href="tel:0894142204">089 414 2204</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
