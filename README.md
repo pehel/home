@@ -33,7 +33,7 @@ If you want more than 5 images:
 
 Edit `index.html` to change:
 
-- Monthly rent amount (currently €2100)
+- Monthly rent amount (currently €2250)
 - Availability date
 - Contact information (phone & email)
 - Property description
